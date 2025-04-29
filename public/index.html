@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>Build with AI (on Campus)</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta property="og:title" content="Gemini Image Generate" />
+  <meta property="og:description" content="프롬프트나 카메라로 이미지를 생성하는 Gemini 기반 웹 앱" />
+  <meta property="og:image" content="https://bwai-ui.gdghufs.com/bwai.png" />
+  <meta property="og:url" content="https://bwai-ui.gdghufs.com" />
+  <meta property="og:type" content="website" />
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div id="header">
+    <img src="bwai.png" alt="Gemini Logo" style="width: 200px;"> 
+    <h3>#3 나만의 이미지 생성 웹서비스 만들기 </h3>
+    <button id="themeToggleBtn">☀️ 라이트 모드</button>
+    <p id="status">준비 됨.</p>
+  </div>
+
+  <div id="container">
+    <div id="left-panel">
+
+      <div class="fileselectors">
+        <video id="video" autoplay playsinline muted></video>
+        <input type="file" id="imageUpload" accept="image/*">
+        <img id="inputPreview" src="" alt="미리보기">
+      </div>
+
+
+      <div class="containers">
+        <button id="startCameraBtn">카메라 켜기</button>
+        <button id="stopCameraBtn">카메라 끄기</button>
+        <button id="captureBtn">사진 찍기</button>
+        <button id="clearImageBtn">업로드 삭제</button>
+      </div>
+
+      <div id="button-group">
+        <button id="animetionBtn" class="genbtn">이미지에 메이드복 입히기</button>
+        <button id="piccasoBtn" class="genbtn">이미지에 정장 입히기</button>
+      </div>  
+
+      <textarea id="prompt" placeholder="생성할 이미지의 프롬프트를 작성하세요"></textarea>
+      <div id="button-group">
+        <button id="generateBtn" class="genbtn">프롬프트로 이미지 생성</button>
+        <button id="downloadBtn">결과 저장</button>
+      </div>
+    </div>
+    
+    <div id="right-panel">
+      <canvas id="outputCanvas"></canvas>
+      <div id="spinner" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);"></div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

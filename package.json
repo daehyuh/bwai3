@@ -1,0 +1,28 @@
+{
+  "name": "bwai",
+  "type": "module",
+  "version": "1.0.0",
+  "main": "main.js",
+  "dependencies": {
+    "@google/genai": "^0.10.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0",
+    "vercel": "^41.6.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "### #3 나만의 이미지 생성 웹서비스 만들기 - 프론트엔드     + https://github.com/daehyuh/bwai3-frontend -  백엔드     + https://github.com/daehyuh/bwai3-backend",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/daehyuh/bwai3-backend.git"
+  },
+  "bugs": {
+    "url": "https://github.com/daehyuh/bwai3-backend/issues"
+  },
+  "homepage": "https://github.com/daehyuh/bwai3-backend#readme"
+}
